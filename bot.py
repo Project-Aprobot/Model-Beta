@@ -1,9 +1,8 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
-import googletrans
-from googletrans import Translator
-
-translator = googletrans.Translator()
+#import googletrans
+#from googletrans import Translator
+#translator = googletrans.Translator()
 
 # Create a ChatBot instance
 chatbot = ChatBot('Arop0t')
@@ -16,11 +15,12 @@ trainer.train('chatterbot.corpus.english')  # You can use other languages as wel
 while True:
     user_input = input("You: ")
 
-    if True:
-        result =  str(translator.translate(user_input, src='sk', dest='en'))
+    #if True:
+    #    result =  str(translator.translate(user_input, src='sk', dest='en'))
         
 
     if user_input.lower() == 'exit':
         break
-    response = chatbot.get_response(result)
+
+    response = chatbot.get_response(user_input)
     print("Bot:", response)
