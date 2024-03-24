@@ -19,19 +19,24 @@ trainer.train('chatterbot.corpus.english')  # You can use other languages as wel
 trainer.train([
     "What is AI?",
     "Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.",
-    "What is Aprogen",
+    "What is aprogen",
     "Aprogen stands for Alternative Programm for Education of Gifted Kids. For more information I suggest you to visit the main site of our school, which is https://www.spmndag.sk/",
     "Who is Jolana",
     "Jolana is the creator and first headmaster of ŠpMNDaG.",
-    "What is ŠpMNDaG",
+    "What is spmndag",
     "ŠpMNDaG is the school of gifted kids.",
-    "Why is SpMNDAG important?",
+    "Why is spmndag important?",
     "It is because smart children have very different interests",
-    "What is your opinion on Slovakia",
+    "What is your opinion on slovakia",
     """A ty mor ho! — hoj mor ho! detvo môjho rodu,
 kto kradmou rukou siahne na tvoju slobodu;
 a čo i tam dušu dáš v tom boji divokom:
 Mor ty len, a voľ nebyť, ako byť otrokom.""",
+    "What is the best drink?",
+    "Kofolaaaa!",
+    "",
+    "",
+
 ])
 
 
