@@ -1,5 +1,6 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.trainers import ListTrainer
 #import googletrans
 #from googletrans import Translator
 #translator = googletrans.Translator()
@@ -9,11 +10,29 @@ chatbot = ChatBot('Arop0t')
 
 # Create a Trainer instance and train the chatbot
 trainer = ChatterBotCorpusTrainer(chatbot)
+trainer = ListTrainer(chatbot)
+
 trainer.train('chatterbot.corpus.english')  # You can use other languages as well
-trainer.train("train.txt")
 
 #Include custom training files 
 
+trainer.train([
+    "What is AI?",
+    "Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.",
+    "What is Aprogen",
+    "Aprogen stands for Alternative Programm for Education of Gifted Kids. For more information I suggest you to visit the main site of our school, which is https://www.spmndag.sk/",
+    "Who is Jolana",
+    "Jolana is the creator and first headmaster of ŠpMNDaG.",
+    "What is ŠpMNDaG",
+    "ŠpMNDaG is the school of gifted kids.",
+    "Why is SpMNDAG important?",
+    "It is because smart children have very different interests",
+    "What is your opinion on Slovakia",
+    """A ty mor ho! — hoj mor ho! detvo môjho rodu,
+kto kradmou rukou siahne na tvoju slobodu;
+a čo i tam dušu dáš v tom boji divokom:
+Mor ty len, a voľ nebyť, ako byť otrokom.""",
+])
 
 
 # Get user input and get responses
@@ -28,4 +47,4 @@ while True:
         break
 
     response = chatbot.get_response(user_input)
-    print("Bot:", response)
+    print("Aprop0t:", response)
