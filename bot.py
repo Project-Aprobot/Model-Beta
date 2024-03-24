@@ -10,6 +10,11 @@ chatbot = ChatBot('Arop0t')
 # Create a Trainer instance and train the chatbot
 trainer = ChatterBotCorpusTrainer(chatbot)
 trainer.train('chatterbot.corpus.english')  # You can use other languages as well
+trainer.train("train.txt")
+
+#Include custom training files 
+
+
 
 # Get user input and get responses
 while True:
