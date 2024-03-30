@@ -39,6 +39,18 @@ Mor ty len, a voľ nebyť, ako byť otrokom.""",
 
 ])
 
+trainer.train([
+
+"Who is the schools headmaster?",
+"Jolana Laznibatová",
+"What is the name of the school headmaster?",
+"Jolana Laznibatová",
+"How many students does SpMNDaG have?",
+"More than 45!",
+"What place did SpMNDaG have in INEKO",
+"It was first",
+
+])
 
 # Get user input and get responses
 while True:
