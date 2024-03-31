@@ -45,11 +45,15 @@ trainer.train([
 "Jolana Laznibatová",
 "What is the name of the school headmaster?",
 "Jolana Laznibatová",
-"How many students does SpMNDaG have?",
+"How many teachers does SpMNDaG have?",
 "More than 45!",
-"What place did SpMNDaG have in INEKO",
+"What place did SpMNDaG have in INEKO assessment",
 "It was first",
-
+"What is the address of school",
+"Skalická 1, 831 02, Bratislava",
+"Where is the school",
+"Skalická 1, 831 02, Bratislava",
+"Who is the the deputy "
 ])
 
 # Get user input and get responses
