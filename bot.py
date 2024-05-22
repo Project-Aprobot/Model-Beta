@@ -56,6 +56,15 @@ trainer.train([
 "Who is the the deputy "
 ])
 
+trainer.train([
+
+    "",
+    "",
+    "",
+    "",
+
+])
+
 # Get user input and get responses
 while True:
     user_input = input("You: ")
